@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/carscraper/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/.idea/PythonScraping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carscraper/.idea/PythonScraping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carscraper/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/settings_chat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/spiders/carspider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/spiders/usedcarspider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/app/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/app/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/app/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/app/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/spiders/carspider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/carscraper/requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/carscraper" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MaxMayer1991&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MaxMayer1991/AutoriaWebScraper.git&quot;,
+    &quot;accountId&quot;: &quot;09886248-0e29-438d-a3b4-c0a1882085f1&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2p4c8V1lte0gduNhGZQXGSwzEv4" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.learn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_scraper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Study/Git/python-projects/PythonScraping&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper" />
+      <recent name="D:\Studia\Git\PythonScraping\Template" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="" />
+      <created>1732028628688</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732028628688</updated>
+      <workItem from="1732028629781" duration="14260000" />
+      <workItem from="1732164554249" duration="3807000" />
+      <workItem from="1732168428196" duration="92000" />
+      <workItem from="1732250955299" duration="1719000" />
+      <workItem from="1732339450183" duration="1459000" />
+      <workItem from="1732450518546" duration="1386000" />
+      <workItem from="1732827960870" duration="2013000" />
+      <workItem from="1732862658634" duration="66000" />
+      <workItem from="1738216086969" duration="12530000" />
+      <workItem from="1738504046091" duration="83000" />
+      <workItem from="1741551220891" duration="1095000" />
+      <workItem from="1741595027375" duration="10432000" />
+      <workItem from="1741853036705" duration="256000" />
+      <workItem from="1742846895423" duration="4363000" />
+      <workItem from="1742917595835" duration="603000" />
+      <workItem from="1742980404499" duration="1482000" />
+      <workItem from="1742982445208" duration="2337000" />
+      <workItem from="1743276421211" duration="17000" />
+      <workItem from="1743708547675" duration="964000" />
+      <workItem from="1743789174855" duration="198000" />
+      <workItem from="1743879373394" duration="3735000" />
+      <workItem from="1744139470122" duration="1108000" />
+      <workItem from="1744192986210" duration="3023000" />
+      <workItem from="1744221150267" duration="4627000" />
+      <workItem from="1744311442973" duration="4823000" />
+      <workItem from="1744392649132" duration="744000" />
+      <workItem from="1744439360301" duration="908000" />
+      <workItem from="1744440753077" duration="1188000" />
+      <workItem from="1744451190817" duration="668000" />
+      <workItem from="1748090391904" duration="2444000" />
+      <workItem from="1748161959451" duration="50000" />
+      <workItem from="1748288697884" duration="192000" />
+      <workItem from="1749404947600" duration="4516000" />
+      <workItem from="1749464224664" duration="7929000" />
+      <workItem from="1749541570796" duration="18373000" />
+      <workItem from="1749614267720" duration="14017000" />
+      <workItem from="1749928995790" duration="1402000" />
+      <workItem from="1749930583490" duration="1733000" />
+      <workItem from="1749989918184" duration="8369000" />
+      <workItem from="1750081544389" duration="3750000" />
+      <workItem from="1750247819285" duration="2990000" />
+      <workItem from="1750250847903" duration="26042000" />
+      <workItem from="1750484573235" duration="3308000" />
+      <workItem from="1750574644163" duration="26543000" />
+      <workItem from="1750670026909" duration="2423000" />
+      <workItem from="1750678491703" duration="26611000" />
+      <workItem from="1750792428653" duration="425000" />
+      <workItem from="1750799011419" duration="2862000" />
+      <workItem from="1750873195724" duration="2272000" />
+      <workItem from="1752575948336" duration="38000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update">
+      <option name="closed" value="true" />
+      <created>1744440528754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744440528754</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonScraping$learn.coverage" NAME="learn Coverage Results" MODIFIED="1750327842979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/carscraper/carscraper" />
+    <SUITE FILE_PATH="coverage/PythonScraping$run_scraper.coverage" NAME="run_scraper Coverage Results" MODIFIED="1750750679795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
