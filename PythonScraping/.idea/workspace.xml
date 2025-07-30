@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="Update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/carscraper/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/carscraper/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/carscraper/.idea/PythonScraping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carscraper/.idea/PythonScraping.iml" afterDir="false" />
@@ -205,6 +206,16 @@
           <url>file://$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py</url>
           <line>2</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/pipelines.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/items.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
