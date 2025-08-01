@@ -5,41 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/carscraper/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/cardata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/loaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/pipelines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/spiders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/run_scraper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/scheduler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/carscraper/scrapy.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/.idea/PythonScraping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/carscraper/.idea/PythonScraping.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/carscraper/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/settings_chat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/spiders/carspider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/carscraper/spiders/usedcarspider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/Template/carscraper/scrapy.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/app/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/app/scraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/app/tasks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/app/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/carscraper/spiders/carspider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/carscraper/scrapy.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/carscraper/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/carscraper" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -86,6 +72,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.css.executor": "Run",
     "Python.learn.executor": "Run",
     "Python.run_scraper.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -101,7 +88,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -110,6 +97,35 @@
       <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper" />
       <recent name="D:\Studia\Git\PythonScraping\Template" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="css" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonScraping" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/carscraper" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carscraper/css.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.css" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -185,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744440528754</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update">
+      <option name="closed" value="true" />
+      <created>1753905030236</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753905030236</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,23 +224,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py</url>
-          <line>1</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py</url>
-          <line>2</line>
+          <line>1</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/carscraper/carscraper/pipelines.py</url>
           <line>55</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/carscraper/carscraper/items.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
