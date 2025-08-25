@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/carscraper/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/run_scraper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/scheduler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PythonScraping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonScraping.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scraper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tasks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookdata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/bookdata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/spiders/bookspider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/requirements.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookscraper/scrapy.cfg" beforeDir="false" />
-    </list>
+    <list default="true" id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="Update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
