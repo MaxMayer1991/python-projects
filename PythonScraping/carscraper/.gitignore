@@ -1,0 +1,29 @@
+### VirtualEnv template
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+# Logs
+logs/
+*.log
+
+../.venv
+.env
+venv
+pip-selfcheck.json
+API_LINK_PROXY.txt
+data.csv
+debug_page.html
+# IDE
+.idea/
+# Scrapy
+.scrapy/              # Scrapy кеш
+debug_page.html
+# Docker
+.dockerignore

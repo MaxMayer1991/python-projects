@@ -1,0 +1,79 @@
+services:
+  postgres:
+    image: postgres:13
+    container_name: autoria_postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/pgdata
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    networks:
+      - autoria_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  scrapy_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    container_name: autoria_scrapy
+    environment:
+      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=${POSTGRES_DB}
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - SCRAPY_LOG_LEVEL=INFO
+      - SCRAPY_LOG_FILE=/app/logs/spider.log
+      # Chrome налаштування
+      - DISPLAY=:99
+      - CHROME_DRIVER_PATH=/usr/local/bin/chromedriver
+      - TZ=Europe/Warsaw
+    volumes:
+      - ./:/app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - autoria_network
+    restart: unless-stopped
+    # Запускаємо scheduler замість прямого запуску spider
+    command: >
+        bash -c "pkill Xvfb || true && 
+                 rm -f /tmp/.X99-lock && 
+                 Xvfb :99 -screen 0 1920x1080x24 & 
+                 python3 scheduler.py"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: autoria_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_EMAIL:-admin@example.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:-admin}
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - autoria_network
+    restart: unless-stopped
+    profiles:
+      - admin
+
+volumes:
+  postgres_data:
+
+networks:
+  autoria_network:
+    driver: bridge
