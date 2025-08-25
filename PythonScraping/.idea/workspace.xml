@@ -28,12 +28,12 @@
     &quot;assignee&quot;: &quot;MaxMayer1991&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MaxMayer1991/AutoriaWebScraper.git&quot;,
-    &quot;accountId&quot;: &quot;09886248-0e29-438d-a3b4-c0a1882085f1&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MaxMayer1991/python-projects.git",
+    "accountId": "ffbf6305-6b56-49d9-803f-f63e7a664bbe"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.venv/Lib/site-packages/scrapy/spiders/__init__.py" root0="SKIP_INSPECTION" />
   </component>
