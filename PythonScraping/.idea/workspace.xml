@@ -9,34 +9,34 @@
       <change afterPath="$PROJECT_DIR$/carscraper/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/cardata.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/carscraper/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/carscraper/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/loaders.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/carscraper/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/output.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/pipelines.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/carscraper/settings.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/carscraper/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carscraper/requirements.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/run_scraper.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/scheduler.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/carscraper/scrapy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonScraping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonScraping.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/settings_chat.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/spiders/carspider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/carscraper/spiders/usedcarspider.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template/carscraper/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tasks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookdata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/bookdata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/bookscraper/spiders/bookspider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookscraper/scrapy.cfg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +67,9 @@
     &quot;accountId&quot;: &quot;09886248-0e29-438d-a3b4-c0a1882085f1&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/Lib/site-packages/scrapy/spiders/__init__.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -87,6 +90,7 @@
     &quot;Python.css.executor&quot;: &quot;Run&quot;,
     &quot;Python.learn.executor&quot;: &quot;Run&quot;,
     &quot;Python.run_scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_spider.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -94,25 +98,30 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Study/Git/python-projects/PythonScraping&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Study/Git/python-projects/PythonScraping/carscraper/docker&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper\docker" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper\carscraper\additional files" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper\carscraper" />
       <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper" />
       <recent name="D:\Studia\Git\PythonScraping\Template" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="css" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonScraping" />
+  <component name="RunManager" selected="Python.run_scraper">
+    <configuration name="run_scraper" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -120,11 +129,13 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 virtualenv at D:\Study\Git\python-projects\PythonScraping\.venv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/carscraper" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carscraper/css.py" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carscraper/run_scraper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -133,11 +144,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.css" />
-      </list>
-    </recent_temporary>
+    <configuration name="test_spider" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <option name="ENV_FILES" value="$PROJECT_DIR$/carscraper/.env" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 virtualenv at D:\Study\Git\python-projects\PythonScraping\.venv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/carscraper" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carscraper/test_spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run_scraper" />
+      <item itemvalue="Python.test_spider" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -204,6 +237,7 @@
       <workItem from="1750799011419" duration="2862000" />
       <workItem from="1750873195724" duration="2272000" />
       <workItem from="1752575948336" duration="38000" />
+      <workItem from="1756040420761" duration="213000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <option name="closed" value="true" />
@@ -227,6 +261,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update" />
     <option name="LAST_COMMIT_MESSAGE" value="Update" />
@@ -235,18 +280,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py</url>
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/additional files/carspider.py</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/carscraper/carscraper/spiders/carspider.py</url>
-          <line>1</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/additional files/pipelines-temp.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/carscraper/carscraper/pipelines.py</url>
-          <line>55</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/middlewares.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/carscraper/scheduler.py</url>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
