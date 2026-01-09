@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright/python:v1.40.0-jammy
+FROM python:3.13-slim-bookworm
 
 WORKDIR /app
 
@@ -8,7 +8,8 @@ RUN apt-get update && apt-get install -y \
     openssh-server \
     postgresql-client \
     tzdata \
-    # Інші бібліотеки (libnss3, libatk і т.д.) вже є в playwright install-deps або в самому образі
+    libpq-dev \
+    gcc \
     && rm -rf /var/lib/apt/lists/*
 
 # Налаштування SSH
@@ -21,9 +22,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Playwright
-# Встановлюємо лише браузер (deps вже є, або якщо треба - розкоментуйте install-deps)
 RUN playwright install firefox
-# RUN playwright install-deps # Спробуйте закоментувати це, якщо зависає, часто це зайве для цього образу
+RUN playwright install-deps
 
 COPY . .
 

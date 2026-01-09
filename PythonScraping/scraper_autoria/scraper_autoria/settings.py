@@ -21,7 +21,7 @@ PLAYWRIGHT_BROWSER_TYPE = "firefox"
 PLAYWRIGHT_LAUNCH_OPTIONS = {
     "headless": True,          # 🛑 Браузер буде відкриватись у вікні
     # "slow_mo": 1000,            # 🐢 Затримка 1с між діями (щоб ви бачили кліки)
-    "timeout": 90 * 1000,       # Таймаут запуску
+    "timeout": 30 * 1000,       # Таймаут запуску
     "args": [
         "--no-sandbox",
         "--disable-gpu",
@@ -33,7 +33,7 @@ PLAYWRIGHT_LAUNCH_OPTIONS = {
         "dom.webdriver.enabled": False,
         "useAutomationExtension": False,
         "browser.cache.disk.enable": False,  # Не кешувати на диск (швидше)
-        "browser.cache.memory.enable": True,
+        "browser.cache.memory.enable": False,
         "permissions.default.image": 2,  # Блокування картинок на рівні рушія Firefox
         "permissions.default.stylesheet": 2,
     }
@@ -62,7 +62,7 @@ PROXY_URL = os.getenv('PROXY_URL')
 # SCRAPEOPS_FAKE_USER_AGENT_ENABLED = True
 # SCRAPEOPS_NUM_RESULTS = 5
 PLAYWRIGHT_MAX_CONTEXTS = 4
-PLAYWRIGHT_MAX_PAGES_PER_CONTEXT = 2
+PLAYWRIGHT_MAX_PAGES_PER_CONTEXT = 4
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
@@ -90,8 +90,8 @@ DOWNLOADER_MIDDLEWARES = {
     # 1. Спочатку ставимо проксі (ваш існуючий)
     'scraper_autoria.middlewares.ProxyMiddleware': 350,
     # 2. Потім ScrapeOps генерує заголовки та UA
-    'scraper_autoria.middlewares.ScrapeOpsFakeUserAgentMiddleware': 370,
-    'scraper_autoria.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 380,
+    # 'scraper_autoria.middlewares.ScrapeOpsFakeUserAgentMiddleware': 370,
+    # 'scraper_autoria.middlewares.ScrapeOpsFakeBrowserHeaderAgentMiddleware': 380,
     # 3. ВАЖЛИВО: Наш новий middleware має йти ПІСЛЯ ScrapeOps, але ДО хендлера
     'scraper_autoria.middlewares.PlaywrightContextMiddleware': 400
 }
@@ -108,16 +108,16 @@ AUTOTHROTTLE_ENABLED = True
 
 # Enable and configure HTTP caching (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-HTTPCACHE_ENABLED = True
-HTTPCACHE_EXPIRATION_SECS = 3600
-HTTPCACHE_DIR = "httpcache"
+# HTTPCACHE_ENABLED = True
+# HTTPCACHE_EXPIRATION_SECS = 3600
+# HTTPCACHE_DIR = "httpcache"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 
 # Set settings whose default value is deprecated to a future-proof value
 FEED_EXPORT_ENCODING = "utf-8"
 
 PLAYWRIGHT_ABORT_REQUEST = lambda req: (
-    req.resource_type in {"image", "font", "media", "other"}
+    req.resource_type in {"image", "media", "other"}
 )
 # Рівень логування для Scrapy
 LOG_LEVEL = 'INFO'
@@ -129,7 +129,7 @@ logging.getLogger('playwright').setLevel(logging.WARNING)
 logging.getLogger('asyncio').setLevel(logging.WARNING)
 
 # The download delay setting will honor only one of:
-# CONCURRENT_REQUESTS_PER_DOMAIN = 1
+CONCURRENT_REQUESTS_PER_DOMAIN = 4
 #CONCURRENT_REQUESTS_PER_IP = 16
 # Збільшуємо таймаут Playwright
 # PLAYWRIGHT_DEFAULT_NAVIGATION_TIMEOUT = 60000
