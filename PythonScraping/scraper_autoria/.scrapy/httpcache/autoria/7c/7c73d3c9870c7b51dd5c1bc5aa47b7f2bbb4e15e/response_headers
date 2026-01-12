@@ -1,0 +1,12 @@
+Server: openresty
+Date: Sat, 10 Jan 2026 20:26:39 GMT
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+X-Powered-By: koa
+Set-Cookie: ab_redesign=1;Path=/;Max-Age=2592000;Secure;SameSite=None
+Set-Cookie: ab_test_new_pages=1;Path=/;Max-Age=2592000;Secure;SameSite=None
+Content-Encoding: gzip
+X-Custom-Need-To-Redirect-Uk: 0
+X-Custom-Need-To-Redirect-Ru: 0
+X-Custom-Is-Ukraine: 1
+X-Custom-Redirect-Type: 7

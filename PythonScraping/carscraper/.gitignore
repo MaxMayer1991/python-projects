@@ -14,10 +14,9 @@ logs/
 *.log
 
 ../.venv
-.env
+
 venv
 pip-selfcheck.json
-API_LINK_PROXY.txt
 data.csv
 debug_page.html
 # IDE
@@ -25,5 +24,10 @@ debug_page.html
 # Scrapy
 .scrapy/              # Scrapy кеш
 debug_page.html
+logs/
+dumps/
+data/
+carscraper/spiders/__pycache__/
+carscraper/logs/
 # Docker
 .dockerignore

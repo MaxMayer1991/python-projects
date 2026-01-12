@@ -11,12 +11,12 @@ class CarItem(scrapy.Item):
     title = scrapy.Field(output_processor=TakeFirst())
     price_usd = scrapy.Field(
         input_processor=Compose(
-            MapCompose(str.strip),    # прибираємо пробіли
-            lambda vals: vals,        # збираємо всі у список
-            l.choose_price,             # вибираємо рядок з $ або з грн
-            l.clean_price               # конвертуємо в int
+            MapCompose(str.strip),    # remove spaces
+            lambda vals: vals,        # put everyone on the list
+            l.choose_price,             # select the line with $
+            l.clean_price               # convert to int
         ),
-        output_processor=TakeFirst()  # беремо єдине число
+        output_processor=TakeFirst()  # take the single number
     )
 
     odometer = scrapy.Field(
@@ -30,7 +30,7 @@ class CarItem(scrapy.Item):
     phone_number = scrapy.Field(
         input_processor=MapCompose(l.clean_phone_list)
     )
-    image_url = scrapy.Field() # Залишаємо як список
+    image_url = scrapy.Field() # Leave it as a list
     image_count = scrapy.Field(
         input_processor=MapCompose(l.clean_image_count),
         output_processor=TakeFirst()

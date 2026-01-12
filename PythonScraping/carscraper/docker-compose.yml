@@ -1,3 +1,7 @@
+
+
+
+
 services:
   postgres:
     image: postgres:13
@@ -36,7 +40,7 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - SCRAPY_LOG_LEVEL=INFO
       - SCRAPY_LOG_FILE=/app/logs/spider.log
-      # Chrome налаштування
+      # Chrome settings
       - DISPLAY=:99
       - CHROME_DRIVER_PATH=/usr/local/bin/chromedriver
       - TZ=Europe/Warsaw
@@ -48,7 +52,7 @@ services:
     networks:
       - autoria_network
     restart: unless-stopped
-    # Запускаємо scheduler замість прямого запуску spider
+    # Running the scheduler instead of directly launching the spider
     command: >
         bash -c "pkill Xvfb || true && 
                  rm -f /tmp/.X99-lock && 

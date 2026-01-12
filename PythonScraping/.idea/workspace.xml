@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/scraper_autoria/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonScraping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonScraping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes-js-project" beforeDir="false" afterPath="$PROJECT_DIR$/quotes-js-project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes-js-project/quotes_js_scraper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes-js-project/quotes_js_scraper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quotes-js-project/quotes_js_scraper/spiders/quotes.py" beforeDir="false" afterPath="$PROJECT_DIR$/quotes-js-project/quotes_js_scraper/spiders/quotes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +28,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/carscraper" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -30,12 +37,12 @@
     &quot;assignee&quot;: &quot;MaxMayer1991&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MaxMayer1991/python-projects.git",
-    "accountId": "ffbf6305-6b56-49d9-803f-f63e7a664bbe"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MaxMayer1991/python-projects.git&quot;,
+    &quot;accountId&quot;: &quot;ffbf6305-6b56-49d9-803f-f63e7a664bbe&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/.venv/Lib/site-packages/scrapy/spiders/__init__.py" root0="SKIP_INSPECTION" />
   </component>
@@ -53,43 +60,107 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.css.executor": "Run",
-    "Python.learn.executor": "Run",
-    "Python.run_scraper.executor": "Run",
-    "Python.test_spider.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.codeium.enabled": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Study/Git/python-projects/PythonScraping/carscraper/docker",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.connect_db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.css.executor&quot;: &quot;Run&quot;,
+    &quot;Python.learn.executor&quot;: &quot;Run&quot;,
+    &quot;Python.leetcode.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.playwright-test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_scraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.run_spider_direct.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_spider.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Study/Git/python-projects/PythonScraping/scraper_autoria/scraper_autoria/spiders&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Git\python-projects\PythonScraping\scraper_autoria\scraper_autoria\spiders" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\scraper_autoria" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\scraper_autoria\scraper_autoria" />
       <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper\docker" />
       <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper\carscraper\additional files" />
-      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper\carscraper" />
-      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper" />
-      <recent name="D:\Studia\Git\PythonScraping\Template" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\scraper_autoria" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\scraper_autoria\scraper_autoria\prevVersionsSpider" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\scraper_autoria\scraper_autoria\spiders" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\carscraper\data" />
+      <recent name="D:\Study\Git\python-projects\PythonScraping\scraper_autoria\scraper_autoria" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run_scraper">
+  <component name="RunManager" selected="Python.playwright-test">
+    <configuration name="leetcode" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonScraping" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/carscraper/logs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carscraper/logs/leetcode.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="playwright-test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonScraping" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scraper_autoria/scraper_autoria/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\Study\Git\python-projects\PythonScraping\carscraper\data\playwright-test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="run_scraper" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,12 +169,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13 virtualenv at D:\Study\Git\python-projects\PythonScraping\.venv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/carscraper" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carscraper/run_scraper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -121,12 +192,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13 virtualenv at D:\Study\Git\python-projects\PythonScraping\.venv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/carscraper" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/carscraper/test_spider.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
@@ -139,16 +210,28 @@
     <list>
       <item itemvalue="Python.run_scraper" />
       <item itemvalue="Python.test_spider" />
+      <item itemvalue="Python.playwright-test" />
+      <item itemvalue="Python.leetcode" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.playwright-test" />
+        <item itemvalue="Python.leetcode" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PY-251.26094.141" />
         <option value="bundled-python-sdk-9f8e2b94138c-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26094.141" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\max6m\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="fce2fb14-27d2-4573-bb43-d030ff16a844" name="Changes" comment="" />
@@ -207,6 +290,17 @@
       <workItem from="1750873195724" duration="2272000" />
       <workItem from="1752575948336" duration="38000" />
       <workItem from="1756040420761" duration="213000" />
+      <workItem from="1767026495707" duration="6279000" />
+      <workItem from="1767040658665" duration="5467000" />
+      <workItem from="1767381857537" duration="5951000" />
+      <workItem from="1767428398510" duration="28000" />
+      <workItem from="1767532832961" duration="59521000" />
+      <workItem from="1767706328600" duration="18526000" />
+      <workItem from="1767729497183" duration="13926000" />
+      <workItem from="1767781132648" duration="10217000" />
+      <workItem from="1767893932237" duration="13005000" />
+      <workItem from="1767977381410" duration="14380000" />
+      <workItem from="1768138678889" duration="6061000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <option name="closed" value="true" />
@@ -267,10 +361,18 @@
           <line>58</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/carscraper/carscraper/settings.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonScraping$playwright_test.coverage" NAME="playwright-test Coverage Results" MODIFIED="1767706554312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scraper_autoria/scraper_autoria/spiders" />
+    <SUITE FILE_PATH="coverage/PythonScraping$leetcode.coverage" NAME="leetcode Coverage Results" MODIFIED="1767035472104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/carscraper/logs" />
+    <SUITE FILE_PATH="coverage/PythonScraping$run_spider_direct.coverage" NAME="run_spider_direct Coverage Results" MODIFIED="1767038439220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/carscraper" />
     <SUITE FILE_PATH="coverage/PythonScraping$learn.coverage" NAME="learn Coverage Results" MODIFIED="1750327842979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/carscraper/carscraper" />
     <SUITE FILE_PATH="coverage/PythonScraping$run_scraper.coverage" NAME="run_scraper Coverage Results" MODIFIED="1750750679795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>

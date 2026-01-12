@@ -4,23 +4,20 @@ import subprocess
 from datetime import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
 
-
 def is_docker_environment():
-    """Автоматично визначає чи працюємо в Docker"""
+    """Automatically determine if we are running in Docker"""
     return (os.path.exists('/.dockerenv') or
             os.getenv('DOCKER_ENV') == 'true' or
             os.path.exists('/app/carscraper'))
-
-
-# Автоматичне визначення середовища
+# Auto determine environment
 if is_docker_environment():
-    print("🐳 Docker середовище виявлено")
+    print("🐳 Docker environment found")
     CARSCRAPER_DIR = '/app'
     DUMP_DIR = '/app/data'
     LOG_DIR = '/app/logs'
     DEFAULT_DB_HOST = 'postgres'
 else:
-    print("💻 Локальне середовище виявлено")
+    print("💻 Local environment found")
     current_dir = os.getcwd()
     if os.path.exists('carscraper') and os.path.exists('carscraper/scrapy.cfg'):
         CARSCRAPER_DIR = os.path.abspath('carscraper')
@@ -28,125 +25,129 @@ else:
     else:
         project_root = os.path.dirname(current_dir)
         CARSCRAPER_DIR = current_dir
-
     DUMP_DIR = os.path.join(project_root, 'data')
     LOG_DIR = os.path.join(project_root, 'logs')
     DEFAULT_DB_HOST = 'localhost'
-
-# ✅ БЕЗПЕЧНЕ отримання змінних середовища (БЕЗ значень за замовчуванням!)
+# ✅ SECURE getting environment variables (WITHOUT variables by default!)
 DB_NAME = os.getenv('POSTGRES_DB')
 DB_USER = os.getenv('POSTGRES_USER')
 DB_PASS = os.getenv('POSTGRES_PASSWORD')
 DB_HOST = os.getenv('POSTGRES_HOST', DEFAULT_DB_HOST)
 DB_PORT = os.getenv('POSTGRES_PORT', '5432')
-
-# Перевірка обов'язкових змінних
+# Check required variables
 required_vars = {
     'POSTGRES_DB': DB_NAME,
     'POSTGRES_USER': DB_USER,
     'POSTGRES_PASSWORD': DB_PASS
 }
-
 missing_vars = [name for name, value in required_vars.items() if not value]
 if missing_vars:
-    print(f"❌ КРИТИЧНА ПОМИЛКА: Відсутні обов'язкові змінні середовища:")
+    print(f"❌ CRITICAL ERROR: Missing required environment variables:")
     for var in missing_vars:
         print(f"   - {var}")
-    print("🔧 Встановіть їх в .env файлі або передайте через docker-compose")
+    print("🔧 Set them in .env file or in docker-compose file")
     sys.exit(1)
-
-# Час запуску
+# Scheduler time
 SPIDER_TIME = os.getenv('SPIDER_TIME')
 DUMP_TIME = os.getenv('DUMP_TIME')
-
-# Створюємо папки
+# Creating directories
 for directory in [DUMP_DIR, LOG_DIR]:
     os.makedirs(directory, exist_ok=True)
 
-
 def run_spider():
-    """Запуск Scrapy spider"""
-    print(f"[{datetime.now()}] 🕷️ Запуск Scrapy spider...")
-
+    """Launch Scrapy spider"""
+    print(f"[{datetime.now()}] 🕷️ Launching Scrapy spider...")
     original_dir = os.getcwd()
     try:
         os.chdir(CARSCRAPER_DIR)
-
         if not os.path.exists('scrapy.cfg'):
-            raise FileNotFoundError(f"scrapy.cfg не знайдено в {CARSCRAPER_DIR}")
-
+            raise FileNotFoundError(f"scrapy.cfg not found in {CARSCRAPER_DIR}")
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         log_file = f"{LOG_DIR}/spider_{timestamp}.log"
         data_file = f"{DUMP_DIR}/cars_{timestamp}.csv"
-
         cmd = [
             sys.executable, '-m', 'scrapy', 'crawl', 'carspider',
             '-L', 'INFO',
             '--logfile', log_file,
             '-o', data_file
         ]
-
-        print(f"📋 Команда: {' '.join(cmd)}")
+        print(f"📋 Command: {' '.join(cmd)}")
         result = subprocess.run(cmd, check=True, capture_output=True, text=True)
-
-        print(f"✅ Spider завершився успішно")
-        print(f"📄 Лог: {log_file}")
-        print(f"📊 Дані: {data_file}")
-
+        print(f"✅ Spider successfully ended")
+        print(f"📄 Logs: {log_file}")
+        print(f"📊 Data: {data_file}")
     except Exception as e:
-        print(f"❌ Помилка spider: {e}")
+        print(f"❌ Error spider: {e}")
     finally:
         os.chdir(original_dir)
 
-
 def dump_db():
-    """Створення дампу бази даних"""
-    print(f"[{datetime.now()}] 💾 Створення дампу БД...")
-
+    """Creating a database dump"""
+    print(f"[{datetime.now()}] 💾 Creating a database dump...")
     timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
     dump_file = os.path.join(DUMP_DIR, f'dump_{timestamp}.sql')
-
     cmd = ['pg_dump', '-h', DB_HOST, '-p', DB_PORT, '-U', DB_USER, '-d', DB_NAME, '-f', dump_file]
-
     env = os.environ.copy()
     env['PGPASSWORD'] = DB_PASS
-
     try:
         subprocess.run(cmd, env=env, check=True)
-        print(f"✅ Дамп створено: {dump_file}")
+        print(f"✅ Dump created: {dump_file}")
     except Exception as e:
-        print(f"❌ Помилка дампу: {e}")
-
+        print(f"❌ Dump error: {e}")
 
 def main():
-    """Головна функція"""
-    print("🚀 Запуск scheduler...")
+    """Main function"""
+    print("🚀 Starting the scheduler...")
     print(f"📁 Scrapy: {CARSCRAPER_DIR}")
-    print(f"📁 Логи: {LOG_DIR}")
-    print(f"📁 Дані: {DUMP_DIR}")
-    print(f"🔗 БД: {DB_USER}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
-
+    print(f"📁 Logs: {LOG_DIR}")
+    print(f"📁 Data: {DUMP_DIR}")
+    print(f"🔗 DB: {DB_USER}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
     scheduler = BlockingScheduler()
-
-    # Планування завдань
+    # Task planning
     hour, minute = map(int, SPIDER_TIME.split(':'))
     scheduler.add_job(run_spider, 'cron', hour=hour, minute=minute, id='spider_job')
     print(f"⏰ Spider: {SPIDER_TIME}")
 
     d_hour, d_minute = map(int, DUMP_TIME.split(':'))
     scheduler.add_job(dump_db, 'cron', hour=d_hour, minute=d_minute, id='dump_job')
-    print(f"💾 Дамп: {DUMP_TIME}")
-
-    # Тест запуск
+    print(f"💾 Dump: {DUMP_TIME}")
+    # Test launch
     if os.getenv('RUN_SPIDER_NOW', '').lower() == 'true':
-        print("🧪 Тестовий запуск...")
+        print("🧪 Test run...")
         run_spider()
-
     try:
         scheduler.start()
     except KeyboardInterrupt:
-        print("🛑 Зупинено")
-
+        print("🛑 Stopped")
 
 if __name__ == '__main__':
     main()
+
+
+def run_spider():
+    """Launch Scrapy spider"""
+    print(f"[{datetime.now()}] 🕷️ Launching Scrapy spider...")
+    original_dir = os.getcwd()
+
+    try:
+        os.chdir(CARSCRAPER_DIR)
+        if not os.path.exists('scrapy.cfg'):
+            raise FileNotFoundError(f"scrapy.cfg not found in {CARSCRAPER_DIR}")
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        log_file = f"{LOG_DIR}/spider_{timestamp}.log"
+        data_file = f"{DUMP_DIR}/cars_{timestamp}.csv"
+        cmd = [
+            sys.executable, '-m', 'scrapy', 'crawl', 'carspider',
+            '-L', 'INFO',
+            '--logfile', log_file,
+            '-o', data_file
+        ]
+        result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+        print(f"✅ Spider completed successfully")
+        print(f"📄 Log: {log_file}")
+        print(f"📊 Data: {data_file}")
+
+    except Exception as e:
+        print(f"❌ Spider error: {e}")
+    finally:
+        os.chdir(original_dir)
